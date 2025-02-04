@@ -49,7 +49,7 @@ header::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/Users/darlenecheong/Desktop/html/images/darlene_transparent.png') no-repeat center center;
+    background: url('portfolio/images/darlene_transparent.png') no-repeat center center;
     background-size: 80%;
     margin-right: 700px;
     z-index: -1;
@@ -112,7 +112,7 @@ header h1 {
     transform: translate(-50%, -50%) scale(0);
     width: 350px;
     height: 300px;
-    background: url('/Users/darlenecheong/Desktop/html/images/window.png') no-repeat center center;
+    background: url('portfolio/images/window.png') no-repeat center center;
     background-size: cover;
     background-color: grey;
     border-radius: 15px;
