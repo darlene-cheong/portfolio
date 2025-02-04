@@ -49,7 +49,7 @@ header::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('images\darlene_transparent.png') no-repeat center center;
+    background: url('images/darlene_transparent.png') no-repeat center center;
     background-size: 80%;
     margin-right: 700px;
     z-index: -1;
