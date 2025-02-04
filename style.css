@@ -397,9 +397,31 @@ header h1 {
 
 .resume-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 200px;
+    width: 100%;
 }
+
+.resume-iframe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.resume-iframe iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Optimization */
+@media screen and (max-width: 768px) {
+    .resume-iframe iframe {
+        height: 400px; /* Adjust height for smaller screens */
+    }
 
 .resume-text {
     max-width: 500px;
@@ -443,22 +465,6 @@ header h1 {
     max-width: 600vh;
     flex: 1;
 }
-
-.resume-iframe iframe {
-    width: 100%;
-    max-width: 100%;
-    height: 600px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 768px) {
-    .resume-iframe iframe {
-        height: 400px; /* Adjust height for better mobile display */
-    }
-}
-
 
 
 /* Contact Icons */
