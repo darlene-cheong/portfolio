@@ -59,8 +59,8 @@ header::before {
 
 header .header-content {
     z-index: 10;
-    margin-left: 700px;
-    margin-top:100px;
+    margin-left: 50vw;
+    margin-top:6vw;
     max-width: 50%;
     text-align: right;
     pointer-events: none;
@@ -80,7 +80,7 @@ header h1 {
     font-size: 10vw;
     font-weight: bold;
     letter-spacing: 1px;
-    margin: -80vw;
+    margin: -7vw;
     color: #BF40BF;
     animation: glow 2.5s ease-in-out infinite;
 }
@@ -205,7 +205,7 @@ header h1 {
     display: flex;
     flex-direction: column; 
     align-items: left;
-    margin-left: 90px;
+    margin-left: 9vw;
     padding: 50px 20px;
 }
 
@@ -216,7 +216,7 @@ header h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/Users/darlenecheong/Desktop/html/images/circles.png');
+    background-image: url('images/circles.png');
     background-size: 35%;
     background-position: bottom left;
     background-repeat: no-repeat;
@@ -239,7 +239,7 @@ header h1 {
 #about p {
     font-family: 'Roboto Mono';
     color: white;
-    font-size: 1.2vw;
+    font-size: 1vw;
     max-width: 600px; /* Keeps paragraphs readable */
     line-height: 1.8;
     margin-bottom: 20px; /* Adds spacing between paragraphs */
@@ -275,7 +275,7 @@ header h1 {
 }
 
 .work-header h2 {
-    font-size: 5rem;
+    font-size: 5vw;
     font-weight: bold;
     color: #BF40BF;
     text-transform: lowercase;
@@ -285,7 +285,7 @@ header h1 {
 .work-header p {
     font-family: 'Roboto Mono';
     color: white;
-    font-size: 12pt;
+    font-size: 1vw;
     max-width: 800px;
     line-height: 1.8;
     margin-top: 10px;
@@ -320,13 +320,13 @@ header h1 {
 }
 
 .work-item h3 {
-    font-size: 0.9rem;
+    font-size: 0.9vw;
     margin-top: 10px;
     font-family: 'Roboto Mono';
 }
 
 .work-item p {
-    font-size: 0.9rem;
+    font-size: 0.9vw;
     color: #bbb;
     font-family: 'Roboto Mono';
 }
@@ -364,7 +364,7 @@ header h1 {
 }
 
 .resume-text h2 {
-    font-size: 5rem;
+    font-size: 5vw;
     font-weight: bold;
     color: #BF40BF;
     text-transform: lowercase;
@@ -374,7 +374,7 @@ header h1 {
 .resume-text p {
     font-family: 'Roboto Mono';
     color: white;
-    font-size: 12pt;
+    font-size: 1vw;
     line-height: 1.8;
     margin-top: 10px;
 }
@@ -500,7 +500,7 @@ header h1 {
 }
 
 #contact h2 {
-    font-size: 5rem;
+    font-size: 5vw;
     font-weight: bold;
     color: #BF40BF;
     text-transform: lowercase;
@@ -509,7 +509,7 @@ header h1 {
 #contact p {
     font-family: 'Roboto Mono';
     color: white;
-    font-size: 12pt;
+    font-size: 1vw;
     max-width: 800px; /* Keeps paragraphs readable */
     line-height: 1.8;
     margin-bottom: 20px; /* Adds spacing between paragraphs */
