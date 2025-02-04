@@ -206,7 +206,6 @@ header h1 {
     flex-direction: column; 
     align-items: left;
     margin-left: 9vw;
-    padding: 50px 20px;
 }
 
 #about::before {
@@ -216,7 +215,7 @@ header h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('images/circles.png');
+    background-image: url('/Users/darlenecheong/Desktop/html/images/circles.png');
     background-size: 35%;
     background-position: bottom left;
     background-repeat: no-repeat;
@@ -254,6 +253,45 @@ header h1 {
 #about a:hover {
     color: darkorange; /* Optional: Change color on hover */
     text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* Aligns text and image vertically */
+    justify-content: space-between; /* Pushes text left and image right */
+    gap: 150px; /* Adds space between text and image */
+    max-width: 80%;
+    margin: 0 auto; /* Centers the section */
+}
+
+/* Ensure text takes up some space */
+.about-text {
+    flex: 1; /* Takes up remaining space */
+}
+
+/* Image Styles */
+.about-image-container {
+    flex-shrink: 0; /* Prevents image from resizing */
+}
+
+.about-image {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; /* Makes the image circular */
+    border: 2px darkgrey solid;
+    object-fit: cover; /* Ensures the image fills the circle */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center; /* Centers text when stacked */
+    }
+
+    .about-image-container {
+        margin-top: 20px; /* Adds spacing when stacked */
+    }
 }
 
 
@@ -343,8 +381,12 @@ header h1 {
     }
 }
 
+
+/* Resume Section */
 #resume {
+    position:   relative;
     display: flex;
+    flex-direction: column;
     justify-content: left;
     align-items: left;
     text-align: left;
@@ -423,17 +465,17 @@ header h1 {
 }
 
 
-
+/* Contact Icons */
 .contact-icons {
-    position: absolute; /* Keeps it in place */
-    top: 50%; /* Adjust for better visibility */
-    left: 11%; /* Adjust if necessary */
+    position: absolute; 
+    top: 50%; 
+    left: 11%; 
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     gap: 15px;
-    z-index: 1000; /* Ensures it's on top */
-    opacity: 0.3; /* Ensures visibility */
+    z-index: 1000; 
+    opacity: 0.3; 
 }
 
 .contact-icons a {
@@ -448,79 +490,42 @@ header h1 {
     transform: scale(1.2);
 }
 
-.about-container {
-    display: flex;
-    align-items: center; /* Aligns text and image vertically */
-    justify-content: space-between; /* Pushes text left and image right */
-    gap: 150px; /* Adds space between text and image */
-    max-width: 80%;
-    margin: 0 auto; /* Centers the section */
-}
 
-/* Ensure text takes up some space */
-.about-text {
-    flex: 1; /* Takes up remaining space */
-}
-
-/* Image Styles */
-.about-image-container {
-    flex-shrink: 0; /* Prevents image from resizing */
-}
-
-.about-image {
-    width: 250px; 
-    height: 250px; 
-    border-radius: 50%; /* Makes the image circular */
-    border: 2px darkgrey solid;
-    object-fit: cover; /* Ensures the image fills the circle */
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
-}
-
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center; /* Centers text when stacked */
-    }
-
-    .about-image-container {
-        margin-top: 20px; /* Adds spacing when stacked */
-    }
-}
-
-
+/* Contact Me Section */
 #contact {
     
     display: flex;
-    justify-content: center;
-    align-items: center;
+  
+    justify-content: left;
+    align-items: left;
     text-align: left;
     max-width: 80%;
-    padding: 50px 20px;
     height: 100vh;
 }
+
 
 #contact h2 {
     font-size: 5vw;
     font-weight: bold;
     color: #BF40BF;
     text-transform: lowercase;
-    animation: glow 2.5s ease-in-out infinite;}
+    animation: glow 2.5s ease-in-out infinite;
+}
 
 #contact p {
     font-family: 'Roboto Mono';
     color: white;
     font-size: 1vw;
-    max-width: 800px; /* Keeps paragraphs readable */
+    max-width: 800px; 
     line-height: 1.8;
-    margin-bottom: 20px; /* Adds spacing between paragraphs */
+    margin-bottom: 20px;
     text-align: left;
     font-weight: 200;
-
 }
+
 .contact-container {
     max-width: 600px;
     margin: 0 auto;
-    gap: 50px;
 }
 
 #contact-form {
